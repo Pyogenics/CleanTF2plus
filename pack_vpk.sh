@@ -13,7 +13,7 @@ cat dev/current_options.txt >> cleantf2/readme.txt
 
 # creating vpk
 echo creating vpk
-dev/linux/vpk.sh -M cleantf2 > /dev/null 2>&1
+vpk -c cleantf2 cleantf2_dir.vpk > /dev/null 2>&1
 
 # moving vpk files
 echo moving vpk files

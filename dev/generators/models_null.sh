@@ -10,7 +10,7 @@ for line in $(cat $1); do
 		;;
 		*)
 			mkdir -p $line > /dev/null 2>&1
-			$2 l $3 | grep "$line" | grep ".vtx" | grep -v ".sw.vtx" > vpk_list.txt
+			$2 -l $3 | grep "$line" | grep ".vtx" | grep -v ".sw.vtx" > vpk_list.txt
 
 			echo removing models in $line
 			for file in $(cat vpk_list.txt); do

@@ -272,13 +272,13 @@ elif [ $flat == 2 ]; then
 fi
 if [ $nohats == 1 ]; then
 	echo removing hats
-	dev/generators/models_null.sh dev/lists/linux/nohats.txt "dev/linux/vpk.sh" "../../tf2_misc_dir.vpk"
+	dev/generators/models_null.sh dev/lists/linux/nohats.txt "vpk" "../../tf2_misc_dir.vpk"
 	dev/generators/remove.sh dev/lists/linux/nohats_weapons.txt
 	echo nohats >> dev/current_options.txt
 	echo done
 elif [ $nohats == 2 ]; then
         echo removing hats headsfeet
-        dev/generators/models_null.sh dev/lists/linux/nohats.txt "dev/linux/vpk.sh" "../../tf2_misc_dir.vpk"
+        dev/generators/models_null.sh dev/lists/linux/nohats.txt "vpk" "../../tf2_misc_dir.vpk"
 	dev/generators/remove.sh dev/lists/linux/nohats_headsfeet.txt
         dev/generators/remove.sh dev/lists/linux/nohats_weapons.txt
         echo nohats headsfeet >> dev/current_options.txt
@@ -286,19 +286,19 @@ elif [ $nohats == 2 ]; then
 fi
 if [ $playergibs == 1 ]; then
 	echo removing player gibs
-	dev/generators/models_null.sh dev/lists/linux/model_removal_gibs_player.txt "dev/linux/vpk.sh" "../../tf2_misc_dir.vpk"
+	dev/generators/models_null.sh dev/lists/linux/model_removal_gibs_player.txt "vpk" "../../tf2_misc_dir.vpk"
 	echo no player gibs >> dev/current_options.txt
 	echo done
 fi
 if [ $shells == 1 ]; then
 	echo removing shell models
-	dev/generators/models_null.sh dev/lists/linux/model_removal_shells.txt "dev/linux/vpk.sh" "../../tf2_misc_dir.vpk"
+	dev/generators/models_null.sh dev/lists/linux/model_removal_shells.txt "vpk" "../../tf2_misc_dir.vpk"
 	echo no shells >> dev/current_options.txt
 	echo done
 fi
 if [ $weapongibs == 1 ]; then
 	echo removing weapon gibs
-	dev/generators/models_null.sh dev/lists/linux/model_removal_gibs_weapons.txt "dev/linux/vpk.sh" "../../tf2_misc_dir.vpk"
+	dev/generators/models_null.sh dev/lists/linux/model_removal_gibs_weapons.txt "vpk" "../../tf2_misc_dir.vpk"
 	echo no weapon gibs >> dev/current_options.txt
 	echo done
 fi
