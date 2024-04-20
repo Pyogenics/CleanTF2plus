@@ -12,3 +12,5 @@ vpk_list.txt
 cleantf2/
 dev/current_options.txt
 *.vpk
+## linux
+venv/
