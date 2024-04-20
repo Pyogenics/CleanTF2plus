@@ -19,15 +19,15 @@ fi
 
 # system dependencies
 
-if ! wine --version; then
+if ! wine --version > /dev/null; then
         echo Error: unable to find wine. Make sure you installed it with your system\'s package manager.
         exit 1
 fi
-if ! convert --version; then
+if ! convert --version > /dev/null; then
         echo Error: unable to find imagemagick. Make sure you installed it with your system\'s package manager.
         exit 1
 fi
-if ! python3 --version; then
+if ! python3 --version > /dev/null; then
         echo Error: unable to find python3. Make sure you installed it with your system\'s package manager.
         exit 1
 fi
@@ -40,7 +40,7 @@ python3 -m venv ./venv
 source ./venv/bin/activate
 pip install vpk
 
-if ! vpk --version; then
+if ! vpk --version > /dev/null; then
         echo Error: unable to install vpk. Correct any python errors or submit an issue.
         exit 1
 fi
