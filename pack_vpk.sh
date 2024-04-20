@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source venv/bin/activate
+
 # starting
 echo preparing folder structure
 mkdir cleantf2 > /dev/null 2>&1
